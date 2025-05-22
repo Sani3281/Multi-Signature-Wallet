@@ -160,4 +160,8 @@ For support and questions:
 - Contact the development team
 
 ---
+##contract detail: 0xFa6DCfF60320d7DdE2b840E3C2C89C80e84002d5
+
+
+![image](https://github.com/user-attachments/assets/f9db9dbe-a71e-463b-979b-e709ea5b679d)
 
