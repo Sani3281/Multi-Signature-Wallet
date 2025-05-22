@@ -184,7 +184,7 @@ contract Project {
 
     /**
      * @dev Get list of owners
-     * @return Array of owner addresses
+     * @return owners Array of owner addresses
      */
     function getOwners() public view returns (address[] memory) {
         return owners;
@@ -192,7 +192,7 @@ contract Project {
 
     /**
      * @dev Get transaction count
-     * @return Number of transactions
+     * @return count Number of transactions
      */
     function getTransactionCount() public view returns (uint256) {
         return transactions.length;
@@ -201,7 +201,11 @@ contract Project {
     /**
      * @dev Get transaction details
      * @param _txIndex Index of the transaction
-     * @return Transaction details
+     * @return to Recipient address of the transaction
+     * @return value Amount of Ether to be sent
+     * @return data Transaction data
+     * @return executed Whether the transaction has been executed
+     * @return numConfirmations Number of confirmations received
      */
     function getTransaction(uint256 _txIndex)
         public
@@ -227,7 +231,7 @@ contract Project {
 
     /**
      * @dev Get contract balance
-     * @return Current balance of the contract
+     * @return balance Current balance of the contract
      */
     function getBalance() public view returns (uint256) {
         return address(this).balance;
